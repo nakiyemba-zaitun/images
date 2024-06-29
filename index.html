@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favour's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/820e9849e5.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <div class="name">
+            <h1>NakiyembaFavourZaitun</h1></div>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portifolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><i>UI/UX Designer</i></p>
+            <h3>Hi,I'm <span>Favour </span><br>Zaitun from Uganda</h3>
+        </div>
+    </div>
+</div>
+<!-- --------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h2 class="subtitle">About Me</h2>
+                <p>As a passionate and dedicated software engineer specializing in UI/UX and front-end development, I thrive on creating intuitive and engaging digital experiences. With a strong foundation in design principles and a keen eye for detail, I bring ideas to life by blending aesthetics with functionality. My expertise spans various technologies and frameworks, enabling me to build responsive, user-friendly interfaces that elevate the user experience. Constantly seeking to improve and innovate, I am committed to staying updated with the latest industry trends and best practices. Whether working on a team or independently, I am driven by a love for coding and a desire to solve complex problems through creative solutions.</p>
+
+                <div id="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing user interfaces</li>
+                        <li><span>Web developmemt</span><br>Web app development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2023-August 2023</span><br>Internship<br><i>Makerere University</i></li>
+                        <li><span>Personal UI Mobile mockups</span><br></li>
+                        <li><span>Jan 2024-Jun 2024</span><br>Final year project<br><i>Makerere University</i></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Current</span><br>BSc.Software Engineering<br><i>Makerere University</i></li>
+                        <li><span>2018-2019</span><br>A'level<br><i>St.Noa Girl's Secondary School,Zzana</i></li>
+                        <li><span>2014-2017</span><br>O'level<br><i>St.Noa Girl's Secondary School,Zzana</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ------services------ -->
+ 
+ <div id="services">
+    <div class="container">
+        <h2 class="subtitle">My Services</h2>
+        <div class="services-list">
+            <div>
+                <h3>UI/UX</h3>
+                <p>Create usermockups that are intuitive and as well prototyped for easy user experience</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h3>Web Design</h3>
+                <p>Create websites that are intuitive for easy user experience</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ------portifolio---- -->
+
+ <div id="portifolio">
+    <div class="container">
+        <h2 class="subtitle">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="home.png">
+                <div class="layer">
+                    <h4>Labour For Christ Ministries App</h4>
+                    <p>The app allows you to stay connected with every service and sermon that happens in church.It also allows you to share a testimony if you cant make it to church physically.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="auth.png">
+                <div class="layer">
+                    <h4>Labour For Christ Ministries App</h4>
+                    <p>The app allows you to stay connected with every service and sermon that happens in church.It also allows you to share a testimony if you cant make it to church physically.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ---contact------ -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="subtitle">Contact Me</h2>
+                <p>favournakiyemba@gmail.com</p>
+                <p>+256756892337<br>+256774050798</p>
+                <a href="Nakiyemba Zaitun - CV.pdf" download class="btn">Download cv</a> 
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i>Copyright reserved by NakiyembaFavourZaitun</i></p>
+    </div>
+  </div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzh5Si4n9p1sXJ1A2BiRQepd2eK99Wpx-056H9qw6Mt2khJJGLGDaTae7Iwi4JQP17F/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
